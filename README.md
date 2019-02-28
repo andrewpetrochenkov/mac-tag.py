@@ -1,6 +1,6 @@
 [![](https://img.shields.io/badge/OS-MacOS-blue.svg?longCache=True)]()
-[![](https://img.shields.io/pypi/pyversions/mac-tag.svg?longCache=True)](https://pypi.org/pypi/mac-tag/)
-[![](https://img.shields.io/pypi/v/mac-tag.svg?maxAge=3600)](https://pypi.org/pypi/mac-tag/)
+[![](https://img.shields.io/pypi/pyversions/mac-tag.svg?longCache=True)](https://pypi.org/project/mac-tag/)
+[![](https://img.shields.io/pypi/v/mac-tag.svg?maxAge=3600)](https://pypi.org/project/mac-tag/)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/mac-tag.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/mac-tag.py/)
 
 #### Install
@@ -14,7 +14,7 @@ $ brew install tag
 ```
 
 #### Functions
-function|description
+function|`__doc__`
 -|-
 `mac_tag.add(tags, path)`|add tags to path(s)
 `mac_tag.find(tags, path=None)`|return list of all paths with tags, limited to path(s) if present

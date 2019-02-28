@@ -3,7 +3,6 @@
 import os
 import public
 import runcmd
-import this_is
 import values
 
 """
@@ -11,6 +10,13 @@ https://github.com/jdberry/tag
 """
 
 bin = "/usr/local/bin/tag"
+
+
+def _string(value):
+    try:
+        return isinstance(value, basestring)
+    except NameError:
+        return isinstance(value, str)
 
 
 def run(args):
@@ -23,7 +29,7 @@ def run(args):
 def _tags(value):
     if not value:
         return []
-    if this_is.string(value):
+    if _string(value):
         return [value]
     return [",".join(value)]
 

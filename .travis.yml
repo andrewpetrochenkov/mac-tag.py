@@ -12,3 +12,4 @@ notifications:
   email: false
 install: curl -fLs https://git.io/fpfTa | bash -s
 script: true
+
