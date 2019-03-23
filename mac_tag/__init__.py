@@ -58,7 +58,7 @@ def update(tags, path):
 
 @public.add
 def match(tags, path):
-    """return list of paths with with matching tags"""
+    """return a list of paths with with matching tags"""
     args = ["-m"] + _tags(tags) + values.get(path)
     out = run(args)
     return out.splitlines()
@@ -87,7 +87,7 @@ def get(path):
 
 @public.add
 def find(tags, path=None):
-    """return list of all paths with tags, limited to path(s) if present"""
+    """return a list of all paths with tags, limited to path(s) if present"""
     args = ["-f"] + _tags(tags) + values.get(path)
     out = run(args)
     return out.splitlines()
