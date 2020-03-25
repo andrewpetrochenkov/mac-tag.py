@@ -3,10 +3,11 @@ https://pypi.org/project/readme-generator/
 https://pypi.org/project/python-readme-generator/
 -->
 
-[![](https://img.shields.io/badge/OS-MacOS-blue.svg?longCache=True)]()
+[![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/pyversions/mac-tag.svg?longCache=True)](https://pypi.org/project/mac-tag/)
 [![](https://img.shields.io/pypi/v/mac-tag.svg?maxAge=3600)](https://pypi.org/project/mac-tag/)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/mac-tag.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/mac-tag.py/)
+[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![Travis](https://api.travis-ci.org/andrewp-as-is/mac-tag.py.svg?branch=master)](https://travis-ci.org/andrewp-as-is/mac-tag.py/)
 
 #### Installation
 ```bash
@@ -31,17 +32,17 @@ function|`__doc__`
 
 #### Examples
 ```python
->>> mac_tag.update(["red","blue"],["path1","path2"])
->>> mac_tag.add(["green"],["path1","path2"])
+>>> mac_tag.update(["Red","Blue"],["path1","path2"])
+>>> mac_tag.add(["Green"],["path1","path2"])
 ```
 
 ```python
 >>> mac_tag.get(["path1"])
-{'path1': ['blue', 'red', 'green']}
+{'path1': ['Blue', 'Red', 'Green']}
 ```
 
 ```python
->>> mac_tag.remove(["red"],["path1","path2"])
+>>> mac_tag.remove(["Red"],["path1","path2"])
 >>> mac_tag.remove(["*"],["path1","path2"])
 ```
 

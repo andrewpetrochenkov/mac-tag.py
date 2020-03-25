@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import mac_tag
 
-tags = ["red", "blue"]
+tags = ["Red", "Blue"]
 path = [__file__]
 
 mac_tag.update(tags, path)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import mac_tag
 
-tags = ["red"]
+tags = ["Red"]
 
 find = mac_tag.find(tags)
 print(find)
