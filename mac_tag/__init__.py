@@ -10,8 +10,12 @@ import values
 https://github.com/jdberry/tag
 """
 
-bin = "/usr/local/bin/tag"
-
+if os.path.exists("/usr/local/bin/tag"):
+    bin = "/usr/local/bin/tag"
+elif os.path.exists("/opt/homebrew/bin/tag"):
+    bin = "/opt/homebrew/bin/tag"
+else:
+    bin = runcmd.run(["which","tag"]).out
 
 def _string(value):
     try:
@@ -21,9 +25,9 @@ def _string(value):
 
 
 def run(args):
-    """run `/usr/local/bin/tag` with arguments and return output"""
-    if not os.path.exists(bin):
-        raise OSError("%s NOT EXISTS\nrun `brew install tag`" % bin)
+    """run `tag` with arguments and return output"""
+    if not bin:
+        raise OSError("tag does NOT EXIST\nrun `brew install tag`")
     return runcmd.run([bin] + values.get(args))._raise().out
 
 
